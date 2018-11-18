@@ -1,5 +1,7 @@
 @import "variables"
 
+@import "mixins"
+
 header
   background-image: url("../img/bg_element_.png")
   background-size: cover
@@ -12,41 +14,56 @@ header
   padding: 0 15px
   margin: 0 auto
 
-.header-top-container
-  display: flex
-  justify-content: space-between
+.header
+  &-top-container
+    +flex-content(space-between)
 
-.header-items-container
-  display: flex
+  &-items-container
+    display: flex
 
-.header-logo-item
-  text-align: center
-  .logo-name
-    font-size: 14px
-    margin: 10px 0 5px 0
+  &-logo-item
+    text-align: center
+    .logo-name
+      font-size: 14px
+      margin: 10px 0 5px 0
 
-  p
-    font-size: 4px
+    p
+      font-size: 4px
 
-.header-top-item
-  text-align: center
-  font-size: 16px
-  color: $primary-color
-  margin-right: 35px
+  &-top-item
+    text-align: center
+    font-size: 16px
+    color: $primary-color
+    margin-right: 35px
 
-  &:hover::after
-    content: ''
-    display: block
-    margin-top: 8px
-    height: 2px
-    background: $primary-color
+    &:hover::after
+      content: ''
+      display: block
+      margin-top: 8px
+      height: 2px
+      background: $primary-color
 
-  &:last-child
-    margin-right: 0
+    &:last-child
+      margin-right: 0
 
-.header-main-container
-  display: flex
-  justify-content: space-between
+  &-main-container
+    +flex-content(space-between)
+
+  &-paragrapg
+    margin-bottom: 28px
+    font-size: 22px
+    font-weight: 500
+    color: $primary-color
+    opacity: 0.57
+
+  &-main-item
+    a
+      display: block
+      text-align: center
+      padding: 15px 0
+      margin-top: 168px
+      max-width: 45px
+      background: $main-btn-color
 
 h1
   margin-top: 175px
@@ -54,37 +71,21 @@ h1
   font-weight: 500
   color: $primary-color
 
-.header-paragrapg
-  margin-bottom: 28px
-  font-size: 22px
-  font-weight: 500
-  color: $primary-color
-  opacity: 0.57
+button
+  padding: 20px 0
+  font-size: 16px
+  font-family: $main-font
 
-.header-main-item
-  button
-    padding: 20px 0
-    font-size: 16px
-    font-family: $main-font
+.white-btn
 
-  .white-btn
-    padding-right: 29px
-    padding-left: 29px
-    margin-right: 20px
-    background: $main-btn-color
-    border: 1px solid #fff
+  padding-right: 29px
+  padding-left: 29px
+  background: $main-btn-color
+  border: 1px solid #fff
 
-
-  .colorless-button
-    padding-right: 47px
-    padding-left: 47px
-    background: transparent
-    border: 1px solid #000
-
-  a
-    display: block
-    text-align: center
-    padding: 15px 0
-    margin-top: 168px
-    max-width: 45px
-    background: $main-btn-color
+.colorless-button
+  margin-left: 20px
+  padding-right: 47px
+  padding-left: 47px
+  background: transparent
+  border: 1px solid #000

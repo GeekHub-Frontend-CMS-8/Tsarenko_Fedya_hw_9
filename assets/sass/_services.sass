@@ -1,0 +1,40 @@
+@import "variables"
+
+@import "mixins"
+
+.services
+  padding: 119px 0
+  background: $secondary-bg-color
+  font-family: $secondary-font
+
+  &-container
+    +flex-content(space-around)
+    align-items: baseline
+    flex-wrap: wrap
+
+  &-item
+    text-align: center
+    margin-top: 80px
+    max-width: 33%
+    width: 100%
+
+  &-paragraph
+    margin-top: 13px
+    color: $primary-color
+    font-size: 24px
+    font-weight: 500
+
+.title-h2
+  text-align: center
+  color: $primary-color
+  font-size: $font-size-h2
+  font-weight: 700
+  opacity: 0.8
+
+  &::before
+    content: ''
+    display: block
+    margin: 0 auto 19px
+    max-width: 60px
+    height: 4px
+    background: $primary-color
