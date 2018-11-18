@@ -155,3 +155,16 @@ button {
     max-width: 60px;
     height: 4px;
     background: #4d4d4d; }
+
+.my-skills {
+  padding: 117px 0 125px 0; }
+  .my-skills-img {
+    display: block;
+    margin: 60px auto 15px; }
+  .my-skills-container {
+    justify-content: space-evenly;
+    display: flex; }
+  .my-skills-item:first-child {
+    margin-left: 60px; }
+  .my-skills-item:last-child {
+    margin-right: 85px; }
