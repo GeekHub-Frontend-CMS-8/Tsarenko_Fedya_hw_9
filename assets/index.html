@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" type="text/css">
@@ -18,11 +19,11 @@
                     <p>UX/UI EXPERT</p>
                 </div>
                 <div class="header-items-container">
-                    <div class="header-top-item">HOME</div>
-                    <div class="header-top-item">ABOUT</div>
-                    <div class="header-top-item">SERVICE</div>
-                    <div class="header-top-item">PORTFOLIO</div>
-                    <div class="header-top-item">CONTACT</div>
+                    <a href="#" class="header-top-item"><div>HOME</div></a>
+                    <a href="#about-me-anchor" class="header-top-item"><div>ABOUT</div></a>
+                    <a href="#services-anchor" class="header-top-item"> <div>SERVICE</div></a>
+                    <a href="#portfolio-anchor" class="header-top-item"><div>PORTFOLIO</div></a>
+                    <a href="#" class="header-top-item"><div>CONTACT</div></a>
                 </div>
             </div>
 
@@ -34,7 +35,7 @@
                     <button class="white-btn">KNOW MORE</button>
                     <button class="colorless-button">HIRE ME</button>
 
-                    <a href="#about-me"><img src="img/down_icon.png" alt=""></a>
+                    <a href="#about-me-anchor" class="icon-navigation"><i class="fas fa-angle-down"></i></a>
                 </div>
 
                 <div class="header-main-item">
@@ -44,7 +45,7 @@
         </div>
     </header>
 
-    <section class="know-more" id="about-me">
+    <section class="know-more" id="about-me-anchor">
         <div class="wrapper">
             <div class="know-more-container">
                 <div class="know-more-item">
@@ -63,7 +64,7 @@
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services-anchor">
         <div class="wrapper">
             <h2 class="title-h2">
                 SERVICES
@@ -113,6 +114,40 @@
                 <div class="my-skills-item"><img src="img/ps.png" alt=""></div>
                 <div class="my-skills-item"><img src="img/ai.png" alt=""></div>
             </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio-anchor">
+        <div class="wrapper">
+            <h2 class="title-h2">PORTFOLIO</h2>
+            <div class="portfolio-container">
+                <div class="portfolio-item">
+                    <img src="img/-1.png" alt="">
+                    <a href="" class="icon-navigation"><i class="fas fa-angle-right"></i></a>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="img/-2.png" alt="">
+                    <a href="" class="icon-navigation"><i class="fas fa-angle-right"></i></a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="img/-3.png" alt="">
+                    <a href="" class="icon-navigation"><i class="fas fa-angle-right"></i></a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="img/-4.png" alt="">
+                    <a href="" class="icon-navigation"><i class="fas fa-angle-right"></i></a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="img/-5.png" alt="">
+                    <a href="" class="icon-navigation"><i class="fas fa-angle-right"></i></a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="img/-6.png" alt="">
+                    <a href="" class="icon-navigation"><i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+            <button>LOAD MORE</button>
         </div>
     </section>
 </body>
