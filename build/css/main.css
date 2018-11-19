@@ -1,6 +1,7 @@
 header {
-  background-image: url("../img/bg_element_.png");
-  background-size: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
   font-family: "Asap", sans-serif;
   padding: 30px 0 0 0; }
 
@@ -40,16 +41,20 @@ header {
   .header-top-item:last-child {
     margin-right: 0; }
 
-.header-main-container {
-  justify-content: space-between;
-  display: flex; }
-
-.header-paragrapg {
-  margin-bottom: 28px;
-  font-size: 22px;
-  font-weight: 500;
-  color: #4d4d4d;
-  opacity: 0.57; }
+.luis {
+  padding: 89px 0 0 0;
+  background-image: url("../img/bg_element_.png");
+  background-size: cover;
+  font-family: "Asap", sans-serif; }
+  .luis-main-container {
+    justify-content: space-between;
+    display: flex; }
+  .luis-paragraph {
+    margin-bottom: 28px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #4d4d4d;
+    opacity: 0.57; }
 
 .icon-navigation {
   display: block;
@@ -198,3 +203,69 @@ button {
   .portfolio-item:hover a {
     opacity: 1;
     transition: 0.6s; }
+
+.testimonials {
+  padding: 123px 0 154px 0;
+  font-family: "Asap", sans-serif; }
+  .testimonials-container {
+    justify-content: space-between;
+    display: flex;
+    align-items: center; }
+  .testimonials-mini-container {
+    justify-content: center;
+    display: flex;
+    align-items: center; }
+  .testimonials-items:first-child {
+    margin-right: 30px; }
+  .testimonials-mini-items {
+    margin: 56px 4px 0 0;
+    border: 1px solid #212121;
+    width: 100%;
+    max-width: 13px;
+    height: 13px; }
+    .testimonials-mini-items:nth-child(2) {
+      background: #212121; }
+    .testimonials-mini-items:last-child {
+      margin-right: 0; }
+  .testimonials-span {
+    opacity: 0.9;
+    color: #212121;
+    font-size: 12px; }
+  .testimonials-paragraph {
+    margin-top: 20px;
+    opacity: 0.6;
+    color: #212121;
+    font-size: 16px;
+    text-transform: uppercase; }
+
+.overall-container {
+  padding: 82px 75px 39px 121px;
+  margin: 57px auto 0;
+  border: 1px solid #212121; }
+
+.title-h3 {
+  color: #212121;
+  font-size: 30px;
+  font-weight: 500; }
+
+.funfact {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #f6f6f6;
+  padding: 75px 0 65px 0; }
+  .funfact-container {
+    justify-content: space-around;
+    display: flex;
+    align-items: center; }
+  .funfact-items {
+    text-align: center; }
+  .funfact-paragraph {
+    margin-top: 15px;
+    font-size: 22px;
+    color: #212121; }
+  .funfact-h3 {
+    font-family: 'Asap Medium', sans-serif;
+    margin-top: 31px;
+    font-size: 22px;
+    color: #212121; }

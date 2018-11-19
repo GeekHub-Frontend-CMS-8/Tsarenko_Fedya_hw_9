@@ -1,0 +1,56 @@
+@import "variables"
+
+@import "mixins"
+
+.testimonials
+  padding: 123px 0 154px 0
+  font-family: $secondary-font
+
+  &-container
+    +flex-content(space-between)
+    align-items: center
+
+  &-mini-container
+    +flex-content(center)
+    align-items: center
+
+  &-items:first-child
+    margin-right: 30px
+
+  &-mini-items
+    margin: 56px 4px 0 0 
+    border: 1px solid $secondary-color
+    width: 100%
+    max-width: 13px
+    height: 13px
+
+    &:nth-child(2)
+      background: $secondary-color
+
+    &:last-child
+      margin-right: 0
+
+  &-span
+    opacity: 0.9
+    color: $secondary-color
+    font-size: 12px
+
+
+  &-paragraph
+    margin-top: 20px
+    opacity: 0.6
+    color: $secondary-color
+    font-size: 16px
+    text-transform: uppercase
+
+.overall-container
+  padding: 82px 75px 39px 121px
+  margin: 57px auto 0
+  border: 1px solid #212121
+
+.title-h3
+  color: $secondary-color
+  font-size: 30px
+  font-weight: 500
+
+

@@ -1,0 +1,28 @@
+@import "variables"
+
+@import "mixins"
+
+.funfact
+  position: absolute
+  left: 0
+  right: 0
+  background: $secondary-bg-color
+  padding: 75px 0 65px 0
+
+  &-container
+    +flex-content(space-around)
+    align-items: center
+
+  &-items
+    text-align: center
+
+  &-paragraph
+    margin-top: 15px
+    font-size: 22px
+    color: $secondary-color
+
+  &-h3
+    font-family: 'Asap Medium', sans-serif
+    margin-top: 31px
+    font-size: 22px
+    color: $secondary-color
