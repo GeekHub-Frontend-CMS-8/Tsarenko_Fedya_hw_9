@@ -249,9 +249,6 @@ button {
   font-weight: 500; }
 
 .funfact {
-  position: absolute;
-  left: 0;
-  right: 0;
   background: #f6f6f6;
   padding: 75px 0 65px 0; }
   .funfact-container {
@@ -265,7 +262,107 @@ button {
     font-size: 22px;
     color: #212121; }
   .funfact-h3 {
-    font-family: 'Asap Medium', sans-serif;
+    font-family: "Asap Medium", sans-serif;
     margin-top: 31px;
     font-size: 22px;
     color: #212121; }
+
+footer {
+  position: relative;
+  padding: 145px 0 30px 0;
+  background-image: url("../img/contact_bg.png");
+  background-size: cover;
+  font-family: "Asap", sans-serif;
+  text-align: center; }
+
+.wrapper-logos {
+  max-width: 1170px; }
+  .wrapper-logos::before {
+    content: '';
+    display: block;
+    margin-bottom: 26px;
+    height: 1px;
+    background: #fff; }
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px 0 25px;
+  margin: 0 auto;
+  max-width: 768px; }
+  form textarea {
+    padding: 15px 10px 166px 10px;
+    margin-top: 29px;
+    resize: none;
+    max-width: 768px;
+    width: 100%;
+    font-size: 16px;
+    color: #212121; }
+
+.footer-h2 {
+  padding: 0 0 20px 0;
+  color: #ffffff;
+  font-size: 46px;
+  font-weight: 700;
+  opacity: 0.8; }
+  .footer-h2::before {
+    content: '';
+    display: block;
+    margin: 0 auto 19px;
+    opacity: 0.6;
+    max-width: 60px;
+    height: 4px;
+    background: #ffffff; }
+
+.form-elements {
+  margin-top: 16px;
+  padding: 15px 10px 15px 10px;
+  max-width: 340px;
+  width: 100%;
+  font-size: 16px;
+  color: #212121; }
+
+.form-button {
+  margin: 30px auto; }
+
+.icon-navigation-up {
+  position: absolute;
+  right: 3%;
+  bottom: 25%;
+  display: block;
+  text-align: center;
+  padding: 15px 20px;
+  max-width: 45px;
+  background: #fff; }
+
+.logos-container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap; }
+
+.logos-container-item {
+  display: flex; }
+
+.logos-items {
+  padding: 5px; }
+  .logos-items:first-child {
+    padding-left: 0; }
+
+.logo {
+  display: block;
+  padding: 10px;
+  color: #000;
+  background: #fff; }
+  .logo:hover {
+    color: #fff;
+    background-color: #0084b4; }
+
+.rights {
+  padding: 15px 0 0 0;
+  margin-right: 33%;
+  margin-left: auto;
+  max-width: 33%;
+  width: 100%;
+  font-size: 16px;
+  color: #fff; }
