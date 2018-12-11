@@ -1,0 +1,43 @@
+#site-navigation
+  display: block
+  background: transparent
+
+#site-navigation #main-menu,
+#site-navigation > input
+  display: none
+
+#site-navigation > label
+  display: block
+  font-size: 36px
+  color: #fff
+  position: relative
+  width: 36px
+  padding: 0
+  cursor: pointer
+
+#site-navigation > input:checked + #main-menu
+  display: block
+  clear: both
+  top: 50px
+  right: 0
+  left: 0
+  background-color: #29323c
+  position: absolute
+  color: #fff
+
+
+#site-navigation ul li
+  display: block
+  padding: 12px 10px
+  &:hover
+    transition: 0.3s ease
+    background-color: #2b3746
+  .nav-items:hover
+    transition: 0.3s ease
+    color: #934713
+
+
+#site-navigation a
+  text-decoration: none
+  color: #fff
+

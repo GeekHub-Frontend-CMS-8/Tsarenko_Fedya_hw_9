@@ -1,0 +1,56 @@
+@import "variables"
+
+@import "mixins"
+
+.form
+  padding: 50px 0
+  background: url("../img/form.png") no-repeat center/cover
+
+label
+  margin-right: 30px
+  color: #f6f6f6
+  font:
+    size: 14px
+    family: $second-font
+
+.form__ul
+  list-style: none
+
+.form__li
+  +flex-content(center)
+  align-items: center
+
+
+.message-label
+  margin-right: 15px
+
+textarea
+  padding: 20px 20px 115px
+  max-width: 300px
+  width: 100%
+  resize: none
+  background-color: transparent
+  border: 1px solid #f2f2f2
+  @media (max-width: 425px)
+    width: auto
+
+.form__input
+  padding: 0 20px
+  height: 45px
+  max-width: 300px
+  width: 100%
+  background-color: transparent
+  border: 1px solid #f2f2f2
+  @media (max-width: 425px)
+    width: auto
+
+.form__button
+  padding: 0 35px
+  margin-left: 43%
+  border-radius: 0
+  &:hover
+    transition: 0.3s ease
+    color: #000
+    background-color: #ffffff
+  @media (max-width: 425px)
+    margin-left: 20%

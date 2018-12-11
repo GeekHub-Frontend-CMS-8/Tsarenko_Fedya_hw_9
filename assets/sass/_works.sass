@@ -1,0 +1,23 @@
+@import "variables"
+
+@import "mixins"
+
+.works
+  padding: 100px 0 0
+  text-align: center
+  
+  &__container
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+
+  .container__item
+    flex-basis: 20%
+    @media (max-width: 992px)
+      +flex-basis(25%)
+    @media (max-width: 425px)
+      +flex-basis(100%)
+    img
+      display: block
+      width: 100%
+      height: 100%

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Airbag Regular";
+    src: url("../fonts/Airbag/Airbag Regular.eot");
+    src: url("../fonts/Airbag/Airbag Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Airbag/Airbag Regular.woff2") format("woff2"),
+    url("../fonts/Airbag/Airbag Regular.woff") format("woff"),
+    url("../fonts/Airbag/Airbag Regular.ttf") format("truetype"),
+    url("../fonts/Airbag/Airbag Regular.svg#Airbag Regular") format("svg");
+}

@@ -1,0 +1,23 @@
+@import "variables"
+
+@import "mixins"
+
+.network-container
+  +flex-content(center)
+  .fas
+    color: #313233
+    font-size: 24px
+
+
+.network-item
+  margin-right: 6px
+  text-align: center
+  height: 24px
+  width: 24px
+  border-radius: 50%
+  background: #313233
+  &:last-child
+    margin-right: 0
+  .fab
+    padding-top: 4px
+    color: #f2f2f2

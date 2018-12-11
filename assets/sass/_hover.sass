@@ -1,0 +1,45 @@
+@import "variables"
+
+@import "mixins"
+
+.hover
+  opacity: 0
+  &:hover
+    opacity: 0.7
+    background-image: linear-gradient(to right, #485563 0%, #29323c 100%)
+
+  &__position-relative
+    position: relative
+
+  &_position-absolute
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    height: 100%
+    +flex-content(center)
+    align-items: center
+    flex-direction: column
+
+  &__title
+    color: $hover-color
+    font:
+      size: 13px
+      family: $second-font
+
+    &-after::after
+      content: ''
+      display: block
+      height: 2px
+      width: 40px
+      margin: 15px auto 0
+      opacity: 0.8
+      background-color: #f2f2f2
+      
+  &__description
+    margin-top: 11px
+    color: $hover-color
+    font:
+      size: 13px
+      family: $second-font
+

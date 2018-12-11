@@ -1,0 +1,54 @@
+@import "variables"
+
+@import "mixins"
+
+.team
+  padding: 100px 0
+  text-align: center
+  background: url("../img/background_2.png") no-repeat  center/cover
+
+  &__container
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    @media (max-width: 768px)
+      justify-content: space-around
+
+  &__item
+    @media (max-width: 768px)
+      margin-bottom: 30px
+      &:last-child
+        margin-bottom: 0
+
+
+  &__info
+    padding-bottom: 30px
+    opacity: 0.75
+    background-color: #f2f2f2
+
+  &__name
+    padding-top: 31px
+
+  &__role
+    padding-top: 7px
+
+  &__img
+    display: block
+    width: 100%
+
+  &__button
+    padding: 0 25px
+    margin-top: 108px
+    &:hover
+      color: #000
+      background-color: #fff
+      transition: 0.3s ease
+
+  &__network
+    margin-top: 23px
+
+
+
+  
+
+

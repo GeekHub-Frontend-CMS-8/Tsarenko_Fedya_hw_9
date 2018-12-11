@@ -1,0 +1,35 @@
+@import "variables"
+
+@import "mixins"
+
+.info
+  padding: 50px 0
+  background-color: #f5f5f5
+  
+  &__container
+    +flex-content(space-between)
+    flex-wrap: wrap
+    @media (max-width: 630px)
+      justify-content: center
+
+  &__item
+    +flex-content(space-between)
+    align-items: center
+    @media (max-width: 630px)
+      +flex-content(100%)
+      margin-bottom: 50px
+      &:last-child
+        margin-bottom: 0
+
+  &__logo
+    margin-right: 27px
+    color: #29323c
+
+  &__description
+    color: #29323c
+    font:
+      size: 14px
+      family: $first-font
+
+  &__network
+    margin-left: 22px
